@@ -29,7 +29,6 @@ p { margin: 0 0 18px; } .intro { font-size: 19px; color: var(--muted); }
 .steps p, .example p { color: var(--muted); }
 .demo-video { display: block; width: 100%; height: auto; background: #152238; border-radius: 10px; border: 1px solid #d4d8de; }
 .demo-video:focus-visible { outline: 3px solid #235ac2; outline-offset: 5px; }
-.video-download { font-size: 14px; margin-top: 12px; }
 .video-transcript { margin: 18px 0 55px; color: var(--muted); }
 .video-transcript summary { cursor: pointer; font-weight: 650; }
 .demo { padding-block: 75px; } .example { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 48px; padding-block: 40px; border-bottom: 1px solid #dcd4c4; }
