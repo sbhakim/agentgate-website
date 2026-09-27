@@ -1,19 +1,9 @@
 # AgentGate Playground website
 
-Static files for hosting https://agentgateplayground.design on GitHub Pages.
+The website is at [agentgateplayground.design](https://agentgateplayground.design).
 
-## Publish
+This repo holds the project page, screenshots, and short demo video. The app itself runs separately.
 
-In this repository's Settings → Pages, choose **Deploy from a branch**, **main**, and **/(root)**, then Save.
+To update the page, edit `index.html`. Styles are in `style.css`, and images and video are in `assets/`.
 
-Keep the custom domain set to `agentgateplayground.design` and enable HTTPS when available.
-
-## Files
-
-- `index.html`: webpage content and embedded demo player.
-- `style.css`: desktop and mobile styling.
-- `assets/`: logo, screenshots, and demo video.
-- `CNAME`: custom domain for GitHub Pages.
-- `.nojekyll`: serves the files without Jekyll processing.
-
-This repository hosts a static showcase only, not the Python application. Do not add API keys or other credentials.
+GitHub Pages publishes from `main`, using the root folder. No build step is needed. Keep `CNAME` in place so the custom domain stays connected.
