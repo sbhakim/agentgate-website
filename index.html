@@ -35,6 +35,23 @@
       </ol>
     </div></section>
     <section class="wrap demo" id="demo">
+      <p class="eyebrow">Watch the playground in action</p><h2>Watch the 1-minute demo.</h2>
+      <p id="video-description" class="section-intro">A captioned Replay walkthrough of blocked requests, sensitive information, and human approval. No audio; all tools are simulated.</p>
+      <video class="demo-video" controls playsinline preload="metadata" width="1600" height="1080" aria-label="AgentGate Playground one-minute Replay demonstration" aria-describedby="video-description">
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/demo.mp4">Open the MP4 demo</a>.
+      </video>
+      <p class="video-download"><a href="assets/demo.mp4" download>Download the demo (MP4, 2.7 MB)</a></p>
+      <details class="video-transcript"><summary>Read the demo walkthrough</summary>
+        <ol>
+          <li>The AI proposes an action; a separate gate checks permission before a tool runs.</li>
+          <li>Reading public meeting notes is allowed. A request for the private member roster is blocked.</li>
+          <li>A draft addressed to an unauthorized recipient is blocked. Nothing is sent.</li>
+          <li>A public update can reach the sponsor, but a confidential budget summary cannot.</li>
+          <li>A normal email to the coordinator pauses for a person to review and approve it.</li>
+          <li>Approval produces one simulated send. This is a learning sandbox, not a production security gateway.</li>
+        </ol>
+      </details>
       <p class="eyebrow">Inside the playground</p><h2>See the decision. Understand the rule.</h2>
       <p class="section-intro">These screenshots show prepared Replay examples using the app's real policy checks. Open an image to inspect it at full size.</p>
       <article class="example"><div><span class="pill denied">Blocked</span><h3>A private list stays private.</h3><p>The assistant can read the club notes, but it cannot open the member roster. An instruction hidden in those notes does not grant extra access.</p><p>The timeline names the rule and shows that the read tool never ran.</p></div><a href="assets/blocked-request.png"><img src="assets/blocked-request.png" alt="Replay timeline showing public notes allowed and the member roster read denied" loading="lazy"></a></article>
