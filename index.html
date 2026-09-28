@@ -11,7 +11,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="wrap">
     <a class="brand" href="#main">AgentGate <span>Playground</span></a>
-    <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#demo">See the demo</a><a href="https://github.com/sbhakim/agentgate_playground">GitHub ↗</a></nav>
+    <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#demo">See the demo</a><a href="https://github.com/sbhakim/agentgate_playground" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
   </header>
   <main id="main">
     <section class="hero wrap">
@@ -19,7 +19,7 @@
         <p class="eyebrow">An interactive AI security playground</p>
         <h1>A helpful AI.<br>A watchful <em>gate.</em></h1>
         <p class="intro">What happens when a document tells an AI to do something it shouldn't? Watch a separate set of rules check the action before a tool runs.</p>
-        <div class="buttons"><a class="button" href="#demo">Explore the demonstration ↓</a><a class="button secondary" href="https://github.com/sbhakim/agentgate_playground#setup">Run it locally ↗</a></div>
+        <div class="buttons"><a class="button" href="#demo">Explore the demonstration ↓</a><a class="button secondary" href="https://github.com/sbhakim/agentgate_playground#setup" target="_blank" rel="noopener noreferrer">Run it locally ↗</a></div>
         <p class="small">Project showcase · The interactive app runs locally.<br>Simulated documents and email. No real messages are sent.</p>
       </div>
       <div class="crest"><img src="assets/logo.png" width="900" height="371" alt="AgentGate Playground: a shield and open gateway"><p>The model proposes.<br><strong>The policy decides.</strong></p></div>
@@ -39,7 +39,7 @@
       <p id="video-description" class="section-intro">See how the gate blocks unsafe requests, protects sensitive information, and asks for human approval.</p>
       <video class="demo-video" controls playsinline preload="metadata" width="1600" height="1080" aria-label="AgentGate Playground one-minute narrated Replay demonstration" aria-describedby="video-description">
         <source src="assets/demo-male-narrated.mp4" type="video/mp4">
-        Your browser does not support embedded video. <a href="assets/demo-male-narrated.mp4">Open the narrated MP4 demo</a>.
+        Your browser does not support embedded video. <a href="assets/demo-male-narrated.mp4" target="_blank" rel="noopener noreferrer">Open the narrated MP4 demo</a>.
       </video>
       <details class="video-transcript"><summary>Read the demo walkthrough</summary>
         <ol>
@@ -53,16 +53,16 @@
       </details>
       <p class="eyebrow">Inside the playground</p><h2>See the decision. Understand the rule.</h2>
       <p class="section-intro">These screenshots show prepared Replay examples using the app's real policy checks. Open an image to inspect it at full size.</p>
-      <article class="example"><div><span class="pill denied">Blocked</span><h3>A private list stays private.</h3><p>The assistant can read the club notes, but it cannot open the member roster. An instruction hidden in those notes does not grant extra access.</p><p>The timeline names the rule and shows that the read tool never ran.</p></div><a href="assets/blocked-request.png"><img src="assets/blocked-request.png" alt="Replay timeline showing public notes allowed and the member roster read denied" loading="lazy"></a></article>
-      <article class="example"><div><span class="pill label">Sensitivity matters</span><h3>Same contact. Different information.</h3><p>A sponsor can receive public club news, but not the confidential budget. Drafts inherit the highest sensitivity of the documents read during the session.</p><p>An approved address is not permission to receive everything.</p></div><a href="assets/sensitive-information.png"><img src="assets/sensitive-information.png" alt="Sensitive-information scenario comparing public and confidential data handling" loading="lazy"></a></article>
-      <article class="example"><div><span class="pill approval">Human approval</span><h3>You make the final call.</h3><p>When approval is required, the send pauses. A person reviews the recipient and message before deciding. The AI cannot press Approve for itself.</p><p>The result appears in a mock outbox, not a real email account.</p></div><a href="assets/approval.png"><img src="assets/approval.png" alt="Approval dialog showing the proposed email for human review" loading="lazy"></a></article>
+      <article class="example"><div><span class="pill denied">Blocked</span><h3>A private list stays private.</h3><p>The assistant can read the club notes, but it cannot open the member roster. An instruction hidden in those notes does not grant extra access.</p><p>The timeline names the rule and shows that the read tool never ran.</p></div><a href="assets/blocked-request.png" target="_blank" rel="noopener noreferrer"><img src="assets/blocked-request.png" alt="Replay timeline showing public notes allowed and the member roster read denied" loading="lazy"></a></article>
+      <article class="example"><div><span class="pill label">Sensitivity matters</span><h3>Same contact. Different information.</h3><p>A sponsor can receive public club news, but not the confidential budget. Drafts inherit the highest sensitivity of the documents read during the session.</p><p>An approved address is not permission to receive everything.</p></div><a href="assets/sensitive-information.png" target="_blank" rel="noopener noreferrer"><img src="assets/sensitive-information.png" alt="Sensitive-information scenario comparing public and confidential data handling" loading="lazy"></a></article>
+      <article class="example"><div><span class="pill approval">Human approval</span><h3>You make the final call.</h3><p>When approval is required, the send pauses. A person reviews the recipient and message before deciding. The AI cannot press Approve for itself.</p><p>The result appears in a mock outbox, not a real email account.</p></div><a href="assets/approval.png" target="_blank" rel="noopener noreferrer"><img src="assets/approval.png" alt="Approval dialog showing the proposed email for human review" loading="lazy"></a></article>
     </section>
     <section class="band"><div class="wrap details">
       <div><p class="eyebrow">Two ways to explore</p><h2>Replay or live AI.</h2><p><strong>Replay</strong> uses prepared proposals. It is repeatable and needs no AI service connection.</p><p><strong>Live</strong> uses a connected model, with direct Google Gemini support. It requires your own server-side API key; access, quotas, and billing depend on your account.</p><p>Both use the same gate. Gemini adapter tests use mock responses; they are not proof of live API access.</p></div>
       <div class="note"><h3>A teaching tool, not a production gateway.</h3><p>The app has three simulated tools, synthetic documents, and temporary in-memory state. Its tests do not establish a universal defense against prompt injection.</p><p>This website is a static showcase. It does not run the Python backend or collect API keys.</p><p class="stack">Python · FastAPI · React · TypeScript · Gemini</p></div>
     </div></section>
-    <section class="wrap closing"><p class="eyebrow">Explore the project</p><h2>Open the gate. Keep the checks.</h2><div class="buttons"><a class="button" href="https://github.com/sbhakim/agentgate_playground">Code & setup instructions ↗</a><a class="button secondary" href="https://github.com/sbhakim/agentgate_playground/blob/main/docs/demo.md">Demo walkthrough ↗</a><a class="button secondary" href="https://drive.google.com/file/d/1Wmle25lBTUHrTIq3dQIS7yHTcB2r3Rxr/view?usp=sharing">Presentation slides ↗</a></div></section>
+    <section class="wrap closing"><p class="eyebrow">Explore the project</p><h2>Open the gate. Keep the checks.</h2><div class="buttons"><a class="button" href="https://github.com/sbhakim/agentgate_playground" target="_blank" rel="noopener noreferrer">Code & setup instructions ↗</a><a class="button secondary" href="https://github.com/sbhakim/agentgate_playground/blob/main/docs/demo.md" target="_blank" rel="noopener noreferrer">Demo walkthrough ↗</a><a class="button secondary" href="https://drive.google.com/file/d/1hFf6BMZFWwRppH1aowtE1NWaxkRCvFcz/view?usp=sharing" target="_blank" rel="noopener noreferrer">Presentation slides ↗</a></div></section>
   </main>
-  <footer class="wrap"><p>AgentGate Playground · Project showcase</p><p>Static website with simulated demonstrations. See <a href="https://github.com/sbhakim/agentgate_playground/blob/main/docs/credits.md">project credits</a> for tools and acknowledgments.</p></footer>
+  <footer class="wrap"><p>AgentGate Playground · Project showcase</p><p>Static website with simulated demonstrations. See <a href="https://github.com/sbhakim/agentgate_playground/blob/main/docs/credits.md" target="_blank" rel="noopener noreferrer">project credits</a> for tools and acknowledgments.</p></footer>
 </body>
 </html>
